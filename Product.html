@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blooming Oasis — Products</title>
+
+    <!-- Bootstrap 5 CSS (CSS Framework) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- DATETIME BAR -->
+    <div class="datetime-bar">
+      <i class="fa fa-clock"></i>&nbsp;
+      <span id="current-datetime">Loading…</span>
+    </div>
+
+    <!-- FULL-WIDTH NAVIGATION -->
+    <nav class="navbar-custom">
+      <div class="navbar-inner">
+        <a href="Home.html" class="navbar-brand">🌿 Blooming Oasis</a>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Product.html" class="active">Products</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════════════════════
+       PRODUCT HERO
+  ══════════════════════════════════════════════════════ -->
+    <section class="product-hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Product Image -->
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80"
+              alt="Monstera Deliciosa"
+              class="product-main-img"
+            />
+          </div>
+
+          <!-- Product Details -->
+          <div class="col-lg-6">
+            <p class="product-subtitle">🌿 Blooming Oasis Exclusive</p>
+            <h1 class="product-title">Monstera Deliciosa</h1>
+            <p style="color: #888; font-size: 0.95rem">
+              The Swiss Cheese Plant — a timeless tropical icon
+            </p>
+            <div class="product-price" id="product-price">$44.99</div>
+
+            <!-- Size Options -->
+            <div class="mb-3">
+              <p
+                style="
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 10px;
+                "
+              >
+                Select Size:
+              </p>
+              <span class="size-btn active">Small</span>
+              <span class="size-btn">Medium</span>
+              <span class="size-btn">Large</span>
+              <span class="size-btn">XL</span>
+            </div>
+
+            <!-- Specifications Table -->
+            <table class="spec-table">
+              <tr>
+                <td>Light</td>
+                <td>Bright, indirect sunlight</td>
+              </tr>
+              <tr>
+                <td>Water</td>
+                <td>Every 1–2 weeks; let soil dry between</td>
+              </tr>
+              <tr>
+                <td>Humidity</td>
+                <td>60–80% — loves misting</td>
+              </tr>
+              <tr>
+                <td>Toxicity</td>
+                <td>⚠️ Toxic to cats &amp; dogs</td>
+              </tr>
+              <tr>
+                <td>Pot Size</td>
+                <td>6" (Small) · 8" (Med) · 10" (Large)</td>
+              </tr>
+              <tr>
+                <td>Repotting</td>
+                <td>Every 1–2 years in spring</td>
+              </tr>
+            </table>
+
+            <!-- Add-On Options -->
+            <p
+              style="
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 12px;
+                margin-top: 8px;
+              "
+            >
+              Add-On Options:
+            </p>
+            <div class="addon-row">
+              <input type="checkbox" id="addon-pot" />
+              <label for="addon-pot">🪴 Ceramic Pot (White Matte)</label>
+              <span class="addon-price">+$18.00</span>
+            </div>
+            <div class="addon-row">
+              <input type="checkbox" id="addon-stand" />
+              <label for="addon-stand">🪵 Bamboo Plant Stand</label>
+              <span class="addon-price">+$24.00</span>
+            </div>
+            <div class="addon-row">
+              <input type="checkbox" id="addon-soil" />
+              <label for="addon-soil">🌱 Premium Potting Mix (3L)</label>
+              <span class="addon-price">+$12.00</span>
+            </div>
+            <div class="addon-row">
+              <input type="checkbox" id="addon-gift" />
+              <label for="addon-gift"
+                >🎁 Gift Wrapping + Handwritten Card</label
+              >
+              <span class="addon-price">+$8.00</span>
+            </div>
+
+            <button class="btn-add-cart" id="add-to-cart">
+              <i class="fa fa-cart-plus me-2"></i>Add to Cart
+            </button>
+
+            <p class="mt-3" style="font-size: 0.85rem; color: #aaa">
+              <i class="fa fa-truck me-1"></i> Free shipping on orders over $60
+              &nbsp;|&nbsp; <i class="fa fa-leaf me-1"></i> 30-day healthy plant
+              guarantee
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       VIDEO SECTION — MONSTERA GROWTH & CARE
+  ════════════════════════════════════════════════════════ -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Watch Monstera Grow</h2>
+          <div class="divider"></div>
+          <p>
+            A short video showcasing Monstera's stunning growth stages and easy
+            care routine.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="video-wrap">
+              <!-- Embedded YouTube video — Monstera care routine -->
+              <iframe
+                width="100%"
+                height="480"
+                src="https://www.youtube.com/embed/YaJT5AXtSRc?si=OrQQJqjYKCQ1Z5io"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="mt-3 text-center" style="color: #888; font-size: 0.9rem">
+              Want to learn more?
+              <a
+                href="https://www.rhs.org.uk/plants/monstera"
+                target="_blank"
+                rel="noopener"
+                style="color: var(--primary); font-weight: 700"
+              >
+                Visit the RHS Plant Guide
+                <i class="fa fa-external-link-alt fa-xs"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       MORE PRODUCTS
+  ════════════════════════════════════════════════════════ -->
+    <section style="background: #f0fff4">
+      <div class="container">
+        <div class="section-header">
+          <h2>More Plants You'll Love</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+                alt="Golden Pothos"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Golden Pothos</h5>
+                <p>Trailing vines that thrive in almost any light.</p>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$22.99</span>
+                  <button class="btn-add">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1490750970193-718059116357?auto=format&fit=crop&w=600&q=80"
+                alt="Succulent"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Succulent Garden</h5>
+                <p>A colourful mix of low-maintenance succulents.</p>
+                <span class="plant-badge badge-pet">Pet-Friendly</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$29.99</span>
+                  <button class="btn-add">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"
+                alt="Peace Lily"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Peace Lily</h5>
+                <p>Elegant white blooms with air-purifying power.</p>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$34.99</span>
+                  <button class="btn-add">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80"
+                alt="Cactus"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Desert Cactus Mix</h5>
+                <p>Sun-loving, drought-tolerant, endlessly charming.</p>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$18.99</span>
+                  <button class="btn-add">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       PLANT PARENT TIPS
+  ════════════════════════════════════════════════════════ -->
+    <section class="tips-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Plant Parent Tips 🌿</h2>
+          <div class="divider"></div>
+          <p>
+            Real experiences from our community of plant lovers. Share your
+            journey!
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="tip-card">
+              <div class="tip-user">
+                <img
+                  src="https://i.pravatar.cc/100?img=1"
+                  alt="Sophie"
+                  class="tip-avatar"
+                />
+                <div>
+                  <div class="tip-name">Sophie Nguyen</div>
+                  <div class="tip-date">July 2026</div>
+                </div>
+              </div>
+              <p class="tip-text">
+                My Monstera has put out 4 new leaves in just 2 months! The key
+                was moving it closer to my east-facing window and upping the
+                humidity. I mist it every other day and the leaves are
+                absolutely massive now. 10/10 plant — highly recommend to
+                beginners!
+              </p>
+              <div class="star">★★★★★</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tip-card">
+              <div class="tip-user">
+                <img
+                  src="https://i.pravatar.cc/100?img=12"
+                  alt="Marcus"
+                  class="tip-avatar"
+                />
+                <div>
+                  <div class="tip-name">Marcus Lee</div>
+                  <div class="tip-date">June 2026</div>
+                </div>
+              </div>
+              <p class="tip-text">
+                Pro tip: put a moss pole in early! My Monstera clung to it
+                straight away and started producing much bigger leaves. The
+                bamboo stand from the add-on bundle looks stunning in my living
+                room. My guests always ask about it first thing!
+              </p>
+              <div class="star">★★★★★</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tip-card">
+              <div class="tip-user">
+                <img
+                  src="https://i.pravatar.cc/100?img=25"
+                  alt="Priya"
+                  class="tip-avatar"
+                />
+                <div>
+                  <div class="tip-name">Priya Sharma</div>
+                  <div class="tip-date">May 2026</div>
+                </div>
+              </div>
+              <p class="tip-text">
+                I was nervous about killing my first Monstera but the care card
+                that came with it was so detailed! Yellow leaf appeared once — I
+                cut back watering and it never happened again. The Blooming
+                Oasis plant specialist chat was super helpful too!
+              </p>
+              <div class="star">★★★★☆</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tip-card">
+              <div class="tip-user">
+                <img
+                  src="https://i.pravatar.cc/100?img=33"
+                  alt="Jake"
+                  class="tip-avatar"
+                />
+                <div>
+                  <div class="tip-name">Jake Williams</div>
+                  <div class="tip-date">April 2026</div>
+                </div>
+              </div>
+              <p class="tip-text">
+                Bought the XL Monstera as a housewarming gift. It arrived in
+                perfect condition, beautifully packaged in recycled materials.
+                The recipient was absolutely thrilled. Will definitely be
+                ordering again — maybe one for myself next time!
+              </p>
+              <div class="star">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════ -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>🌿 Blooming Oasis</h5>
+            <p style="font-size: 0.9rem; line-height: 1.7">
+              Your trusted source for beautiful, healthy indoor plants.
+            </p>
+            <div class="mt-3">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Pages</h5>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="product.html" class="footer-link">Products</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="col-md-3">
+            <h5>Help</h5>
+            <a href="#" class="footer-link">Shipping Info</a>
+            <a href="#" class="footer-link">Returns Policy</a>
+            <a href="#" class="footer-link">Plant Guarantee</a>
+            <a
+              href="https://www.rhs.org.uk/plants"
+              target="_blank"
+              rel="noopener"
+              class="footer-link"
+            >
+              RHS Plant Database <i class="fa fa-external-link-alt fa-xs"></i
+            ></a>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <p style="font-size: 0.88rem">📧 hello@bloomingoasis.com</p>
+            <p style="font-size: 0.88rem; margin-top: 8px">📞 (03) 9876 5432</p>
+            <a
+              href="contact.html"
+              class="btn-green d-inline-block mt-3"
+              style="font-size: 0.85rem; padding: 10px 22px"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="footer-copy">© 2026 Blooming Oasis. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ════════════════════════════════════════════════════════
+       ADD TO CART POPUP
+  ════════════════════════════════════════════════════════ -->
+    <div class="cart-overlay" id="cart-overlay">
+      <div class="cart-box">
+        <div style="font-size: 3.5rem; margin-bottom: 12px">🛒</div>
+        <h3>Added to Cart!</h3>
+        <p>
+          Your Monstera Deliciosa has been added to your cart successfully.
+          Continue shopping or head to checkout.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <button class="btn-close-popup" id="cart-close">
+            Continue Shopping
+          </button>
+          <a href="contact.html" class="btn-green">Checkout →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

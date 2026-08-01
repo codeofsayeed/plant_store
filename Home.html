@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blooming Oasis — Home</title>
+
+    <!-- Bootstrap 5 CSS (CSS Framework) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- DATETIME BAR -->
+    <div class="datetime-bar">
+      <i class="fa fa-clock"></i>&nbsp;
+      <span id="current-datetime">Loading…</span>
+    </div>
+
+    <!-- FULL-WIDTH NAVIGATION -->
+    <nav class="navbar-custom">
+      <div class="navbar-inner">
+        <a href="Home.html" class="navbar-brand">🌿 Blooming Oasis</a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Nav Links — internal page linking -->
+        <ul class="nav-links">
+          <li><a href="Home.html" class="active">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-content">
+            <h1>Bring <span>Nature</span><br />Into Your Home</h1>
+            <p>
+              Handpicked tropical plants, delivered with care. Discover your
+              perfect plant companion at Blooming Oasis — your urban jungle
+              starts here.
+            </p>
+            <a href="#quiz" class="btn-green me-2">Find My Plant 🌱</a>
+            <a href="product.html" class="btn-outline-white">Shop Now</a>
+          </div>
+          <div class="col-lg-6">
+            <!-- PHOTO COLLAGE -->
+            <div class="collage-grid">
+              <div class="collage-item">
+                <img
+                  src="https://images.unsplash.com/photo-1545165375-3af1a2c8a5e1?auto=format&fit=crop&w=600&q=80"
+                  alt="Indoor plants room"
+                  loading="lazy"
+                />
+              </div>
+              <div class="collage-item">
+                <img
+                  src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=600&q=80"
+                  alt="Monstera leaf"
+                  loading="lazy"
+                />
+              </div>
+              <div class="collage-item">
+                <img
+                  src="https://images.unsplash.com/photo-1490750970193-718059116357?auto=format&fit=crop&w=600&q=80"
+                  alt="Succulent arrangement"
+                  loading="lazy"
+                />
+              </div>
+              <div class="collage-item">
+                <img
+                  src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"
+                  alt="Plant care"
+                  loading="lazy"
+                />
+              </div>
+              <div class="collage-item">
+                <img
+                  src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80"
+                  alt="Cactus plants"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       PLANT MATCHMAKER QUIZ
+  ════════════════════════════════════════════════════════ -->
+    <section class="quiz-section" id="quiz">
+      <div class="container">
+        <div class="section-header">
+          <h2>Plant Matchmaker 🌱</h2>
+          <div class="divider"></div>
+          <p>
+            Answer 3 quick questions and we'll recommend the perfect plant for
+            your space and lifestyle.
+          </p>
+        </div>
+
+        <div class="quiz-box">
+          <!-- Quiz steps rendered by JS -->
+          <div id="quiz-steps"></div>
+          <!-- Result shown after quiz -->
+          <div id="quiz-result" class="quiz-result"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       POPULAR HOUSEPLANTS
+  ════════════════════════════════════════════════════════ -->
+    <section id="popular">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular Houseplants</h2>
+          <div class="divider"></div>
+          <p>
+            Our best-loved plants, chosen by thousands of happy plant parents
+            across the country.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=600&q=80"
+                alt="Monstera Deliciosa"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Monstera Deliciosa</h5>
+                <p>The iconic split-leaf beauty. Fast-growing and dramatic.</p>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <span class="plant-badge badge-low">Low Water</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$44.99</span>
+                  <a href="product.html"
+                    ><button class="btn-add">Add to Cart</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80"
+                alt="Cactus"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Desert Cactus Mix</h5>
+                <p>Sun-loving, drought-tolerant, endlessly charming.</p>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <span class="plant-badge badge-pet">Non-toxic</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$18.99</span>
+                  <a href="product.html"
+                    ><button class="btn-add">Add to Cart</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+                alt="Pothos"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Golden Pothos</h5>
+                <p>Trailing vines that purify air and thrive anywhere.</p>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <span class="plant-badge badge-low">Low Light</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$22.99</span>
+                  <a href="product.html"
+                    ><button class="btn-add">Add to Cart</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="plant-card">
+              <img
+                src="https://images.unsplash.com/photo-1490750970193-718059116357?auto=format&fit=crop&w=600&q=80"
+                alt="Succulent"
+                loading="lazy"
+              />
+              <div class="plant-card-body">
+                <h5>Succulent Garden</h5>
+                <p>A curated mix of colourful, low-maintenance succulents.</p>
+                <span class="plant-badge badge-pet">Pet-Friendly</span>
+                <span class="plant-badge badge-easy">Easy Care</span>
+                <div class="plant-footer">
+                  <span class="plant-price">$29.99</span>
+                  <a href="product.html"
+                    ><button class="btn-add">Add to Cart</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="product.html" class="btn-green">View All Plants →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       CURATED COLLECTIONS
+  ════════════════════════════════════════════════════════ -->
+    <section class="collections-bg" id="collections">
+      <div class="container">
+        <div class="section-header">
+          <h2>Curated Collections</h2>
+          <div class="divider"></div>
+          <p>
+            Themed plant sets designed to transform any space into a lush,
+            vibrant haven.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img
+                src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=600&q=80"
+                alt="Tropical Escape"
+                loading="lazy"
+              />
+              <div class="collection-overlay">
+                <h4>🌴 Tropical Escape</h4>
+                <p>6 statement tropicals · From $89</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img
+                src="https://images.unsplash.com/photo-1518335935020-cfd07568f4e5?auto=format&fit=crop&w=600&q=80"
+                alt="Office Oasis"
+                loading="lazy"
+              />
+              <div class="collection-overlay">
+                <h4>💼 Office Oasis</h4>
+                <p>Low-light desk plants · From $49</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img
+                src="https://images.unsplash.com/photo-1491796014055-e6835cdcd4c4?auto=format&fit=crop&w=600&q=80"
+                alt="Pet-Safe Bundle"
+                loading="lazy"
+              />
+              <div class="collection-overlay">
+                <h4>🐾 Pet-Safe Bundle</h4>
+                <p>Non-toxic favourites · From $65</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img
+                src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80"
+                alt="Desert Garden"
+                loading="lazy"
+              />
+              <div class="collection-overlay">
+                <h4>🌵 Desert Garden</h4>
+                <p>Cacti &amp; succulents · From $45</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       PLANT CARE GUIDES
+  ════════════════════════════════════════════════════════ -->
+    <section id="care-guides">
+      <div class="container">
+        <div class="section-header">
+          <h2>Plant Care Guides</h2>
+          <div class="divider"></div>
+          <p>
+            Expert tips to help every plant in your home flourish all year
+            round.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="care-card">
+              <div class="care-icon">💧</div>
+              <h4>Watering Basics</h4>
+              <p>
+                Learn the finger-test method, understand drainage, and never
+                overwater again. Your plant will thank you!
+              </p>
+              <a href="#" class="read-more">Read Guide →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="care-card">
+              <div class="care-icon">☀️</div>
+              <h4>Light Requirements</h4>
+              <p>
+                Decode "indirect bright light" vs "low light" and find the
+                perfect spot for every plant in your home.
+              </p>
+              <a href="#" class="read-more">Read Guide →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="care-card">
+              <div class="care-icon">🌱</div>
+              <h4>Repotting Guide</h4>
+              <p>
+                Signs your plant is root-bound, choosing the right soil mix, and
+                step-by-step repotting instructions.
+              </p>
+              <a href="#" class="read-more">Read Guide →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="care-card">
+              <div class="care-icon">🐛</div>
+              <h4>Pest Control</h4>
+              <p>
+                Identify spider mites, mealybugs, and fungus gnats early — and
+                treat them naturally at home.
+              </p>
+              <a href="#" class="read-more">Read Guide →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       ABOUT BLOOMING OASIS PREVIEW
+  ════════════════════════════════════════════════════════ -->
+    <section class="about-preview-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h2>About Blooming Oasis</h2>
+            <div class="divider" style="margin: 14px 0"></div>
+            <p>
+              Founded in 2018 by two passionate plant enthusiasts, Blooming
+              Oasis started as a small balcony garden and grew into a beloved
+              plant destination. We believe every home deserves a touch of green
+              — and every plant deserves a loving home.
+            </p>
+            <p class="mt-3">
+              We source our plants from eco-conscious nurseries, use 100%
+              recyclable packaging, and donate 5% of every sale to urban
+              reforestation projects.
+            </p>
+            <a href="about.html" class="btn-green mt-4 d-inline-block"
+              >Our Story →</a
+            >
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="number">12K+</div>
+                  <div class="label">Happy Customers</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="number">350+</div>
+                  <div class="label">Plant Varieties</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="number">98%</div>
+                  <div class="label">Satisfaction Rate</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="number">5K+</div>
+                  <div class="label">Trees Planted</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════ -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>🌿 Blooming Oasis</h5>
+            <p style="font-size: 0.9rem; line-height: 1.7">
+              Your trusted source for beautiful, healthy indoor plants. Bringing
+              nature indoors, one plant at a time.
+            </p>
+            <div class="mt-3 social-icons-footer">
+              <!-- External links with target="_blank" -->
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+              >
+                <i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+              >
+                <i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+              >
+                <i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com"
+                target="_blank"
+                rel="noopener"
+                class="social-icon-link"
+              >
+                <i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Quick Links</h5>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="product.html" class="footer-link">Products</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="col-md-3">
+            <h5>Plant Care</h5>
+            <a href="#care-guides" class="footer-link">Watering Guide</a>
+            <a href="#care-guides" class="footer-link">Light Guide</a>
+            <a href="#care-guides" class="footer-link">Repotting Tips</a>
+            <a href="#care-guides" class="footer-link">Pest Control</a>
+            <!-- External link example -->
+            <a
+              href="https://en.wikipedia.org/wiki/Houseplant"
+              target="_blank"
+              rel="noopener"
+              class="footer-link"
+              >Learn More (Wikipedia)
+              <i class="fa fa-external-link-alt fa-xs"></i
+            ></a>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <p style="font-size: 0.88rem">
+              📍 42 Green Lane, Melbourne VIC 3000
+            </p>
+            <p style="font-size: 0.88rem; margin-top: 8px">
+              📧 hello@bloomingoasis.com
+            </p>
+            <p style="font-size: 0.88rem; margin-top: 8px">📞 (03) 9876 5432</p>
+            <a
+              href="contact.html"
+              class="btn-green d-inline-block mt-3"
+              style="font-size: 0.85rem; padding: 10px 22px"
+            >
+              Get in Touch</a
+            >
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="footer-copy">
+          © 2026 Blooming Oasis. All rights reserved. Made with 💚 for plant
+          lovers.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript File -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
