@@ -94,13 +94,13 @@ images/contact-page.png
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/plant-store.git
+git clone https://github.com/codeofsayeed/plant_store.git
 ```
 
 ### 2️⃣ Navigate to the Project Folder
 
 ```bash
-cd plant-store
+cd plant_store
 ```
 
 ### 3️⃣ Open the Website
