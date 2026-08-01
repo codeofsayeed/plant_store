@@ -59,7 +59,8 @@ plant-store/
 
 ### 🏠 Home Page
 
-> Add a screenshot here
+<img width="1909" height="950" alt="image" src="https://github.com/user-attachments/assets/dbcc5156-fbd5-4918-a7ce-d8c86ecb5e6e" />
+
 
 ```
 images/home-page.png
@@ -67,7 +68,8 @@ images/home-page.png
 
 ### ℹ️ About Page
 
-> Add a screenshot here
+<img width="1895" height="916" alt="image" src="https://github.com/user-attachments/assets/075111ca-011f-4f89-bb18-b9a348b9bbbd" />
+
 
 ```
 images/about-page.png
@@ -75,7 +77,11 @@ images/about-page.png
 
 ### 📞 Contact Page
 
-> Add a screenshot here
+<img width="1908" height="954" alt="image" src="https://github.com/user-attachments/assets/20a70324-a9d8-44a7-b416-25de6c6b437c" />
+
+<img width="1887" height="851" alt="image" src="https://github.com/user-attachments/assets/5dc73f55-a807-4fa2-b79b-d18606697444" />
+
+
 
 ```
 images/contact-page.png
