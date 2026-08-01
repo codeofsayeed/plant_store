@@ -26,6 +26,12 @@ The Plant Store project is a multi-page frontend website designed for plant love
 
 ---
 
+## 🙏 Credits
+
+- 📸 Plant images sourced from **Unsplash**
+- 🎥 Plant care videos embedded from **YouTube**
+- 🎨 UI components built with **Bootstrap 5**
+
 ## 🛠️ Technologies Used
 
 - HTML5
@@ -42,6 +48,7 @@ plant-store/
 │
 ├── Home.html
 ├── About.html
+├── Product.html
 ├── Contact.html
 │
 ├── css/
