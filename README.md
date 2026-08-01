@@ -176,12 +176,12 @@ Feel free to fork this repository and submit a Pull Request.
 
 ## 📬 Contact
 
-**Abu Sayeed**
+**Abu Sayeed Emon**
 
 💼 MERN Stack Developer
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-profile
+- GitHub: https://github.com/codeofsayeed
+- LinkedIn: (https://www.linkedin.com/in/abu-sayeed-emon-81b6a23a7/)
 
 ---
 
